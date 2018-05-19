@@ -1,9 +1,12 @@
 import React from 'react'
 import '../../style/style.css'
 import Navigation from './Navigation/Navigation'
+import bg from '../../images/alvaro-reyes-500044-unsplash.png'
+
+const backgroundStyle = { background: `url(${bg}) center center no-repeat`, backgroundSize: 'cover' }
 
 const Header = () => (
-    <div className="header-container">
+    <div className="header-container" style={backgroundStyle}>
         <Navigation/>
         <h1>
             join an impactful company 
