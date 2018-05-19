@@ -7,21 +7,21 @@ body {
     background-color: gray;
     margin: 0;
     padding: 0;
-    font-family: Roboto, Arial, Helvetica;
+    font-family: Roboto;
 } 
 
 /*App Container*/
 .App-container {
     left: 0;
     top : 0;
-    height: 100vh;
+    height: 100vh;  
 }
 
 /*Header*/
 .header-container {
     box-sizing: border-box;
     margin: 0;
-    padding: 15px;
+    padding: 30px;
     color : white;
     position: relative;
     width : 100%;
@@ -40,7 +40,7 @@ body {
 		left : 0;
 		bottom : 0;
 		right : 0;
-        background-image: linear-gradient(to right, rgb(228, 39, 6), rgb(255, 115, 0) );
+        background-image: linear-gradient(to right, red, rgb(255, 115, 0) );
         opacity: 0.6;
     }
 
@@ -93,5 +93,27 @@ body {
             border : 1px solid #eee;
             background-color: white;
         }
+    }
+}
+
+/*Article*/
+
+.App-article {
+    display : flex;
+    padding : 50px 150px; 
+    background-color: white;
+
+    div.title {
+        font-weight: bold;
+        color : rgb(59, 59, 59);
+        font-size: 1.4em;
+        width : 35%;
+        flex-shrink: 0;
+    }
+    div.content {
+        padding-top: 15px;
+        color : gray;
+        font-size: 1.05em;
+        line-height: 1.6em;
     }
 }
