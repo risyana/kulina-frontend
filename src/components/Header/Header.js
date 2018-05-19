@@ -9,7 +9,7 @@ const Header = () => (
     <div className="header-container" style={backgroundStyle}>
         <Navigation/>
         <h1>
-            join an impactful company 
+            Join an impactful company 
         </h1>
         <div>
             <button>

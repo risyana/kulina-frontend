@@ -67,13 +67,16 @@ class App extends Component {
 
         <Article title="What We Do" bgcolor="white">
           <p>
-            Lorem ipsum dolor sit amet, aliquip omnesque senserit mel an, eum nulla persecuti et.aliquip omnesque senserit mel an, eum nulla persecuti et.aliquip omnesque senserit mel an, eum nulla persecuti et. Deseruisse conclusionemque ex vel, vim brute ornatus ea. Pri percipitur deterruisset cu. Est eu ferri detraxit. Scripta intellegat his id, ut torquatos incorrupte duo, sonet definitionem mei an.
+            Kulina's mission is to "server the best meal with an oustanding customer experice at the lowest possible price every single day".
+            We want to be customer's default meal option by providing quality product with on-time delivery. 
+            We help customers save time and money for each meal they get from us, so the can better spend it on other thins that matter.  
           </p>
           <p>
-            Lorem ipsum dolor sit amet, aliquip omnesque senserit mel an, eum nulla persecuti et. Deseruisse conclusionemque ex vel, vim brute ornatus ea. Pri percipitur deterruisset cu. Est eu ferri detraxit. Scripta intellegat his id, ut torquatos incorrupte duo, sonet definitionem mei an.
           </p>
+          We tooke pride in being the first food tech startup to join "Google Launchpad Accelearator" in San Francisco, and the only one from Indonesia in winter 2018.
+          Our startup is backed by the same investor who invested in Ele.me (China's unicorn food delivery startup)
           <p>
-            Lorem ipsum dolor sit amet, aliquip omnesque senserit mel an, eum nulla persecuti et. Deseruisse conclusionemque ex vel, vim brute ornatus ea. Pri percipitur deterruisset cu. Est eu ferri detraxit. Scripta intellegat his id, ut torquatos incorrupte duo, sonet definitionem mei an.
+            Join us in our missioin to delivering best meals to ten millions of Jakartans. Hurry! Be part of our Kulinas family.
           </p>
         </Article>
       
