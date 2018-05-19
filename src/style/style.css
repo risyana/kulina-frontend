@@ -126,6 +126,8 @@ body {
     border-top: 1px solid #eee; }
   .App-footer p i {
     color: red; }
+  .App-footer p br {
+    display: none; }
   .App-footer div {
     display: flex;
     justify-content: space-between;
@@ -142,3 +144,44 @@ body {
         padding: 5px; }
         .App-footer div div a i {
           font-size: 2em; }
+
+/*---mobile---*/
+@media (max-width: 900px) {
+  .header-container {
+    padding: 10px; }
+    .header-container:before {
+      background-image: linear-gradient(to bottom, red, #ff7300); }
+    .header-container nav img {
+      width: 110px; }
+    .header-container nav ul {
+      display: none; }
+  .App-article {
+    flex-direction: column;
+    padding: 30px 15px; }
+    .App-article div.title {
+      font-size: 1em;
+      width: 100%; }
+    .App-article div.content {
+      padding-top: 0;
+      width: 100%; }
+  .Job {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 10px 15px 15px;
+    margin-bottom: 13px; }
+    .Job button {
+      height: 34px; }
+  .App-footer {
+    padding: 30px 15px;
+    text-align: center; }
+    .App-footer div {
+      flex-direction: column; }
+      .App-footer div p br {
+        display: inline-block; }
+      .App-footer div div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center; }
+        .App-footer div div a i {
+          font-size: 1em; } }

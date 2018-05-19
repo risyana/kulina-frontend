@@ -14,7 +14,7 @@ body {
 .App-container {
     left: 0;
     top : 0;
-    height: 100vh;
+    height: 100vh; 
 }
 
 /*Header*/
@@ -175,6 +175,10 @@ body {
         i {
             color : red; 
         }
+
+        br {
+            display: none;
+        }
     }
 
     div {
@@ -195,9 +199,85 @@ body {
                 text-decoration: none;
                 color: inherit;
                 padding : 5px;
-                
+
                 i {
                     font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+/*---mobile---*/
+
+@media (max-width: 900px) {
+
+    .header-container {
+        padding : 10px;
+
+        &:before {
+            background-image: linear-gradient(to bottom, red, rgb(255, 115, 0) );
+        
+        }
+        nav {
+            img {
+                width: 110px;
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    .App-article {
+        flex-direction: column;
+        padding : 30px 15px;
+
+        div.title {
+            font-size: 1em;
+            width : 100%
+        }
+        div.content {
+            padding-top: 0;
+            width : 100%
+
+        }
+    }
+
+    .Job {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding : 0 10px 15px 15px;
+        margin-bottom: 13px;
+        
+        button {
+            height: 34px;
+        }
+    }
+
+    .App-footer {
+        padding : 30px 15px;
+        text-align: center;
+
+        div {
+            flex-direction: column;
+
+            p {
+                br {
+                    display: inline-block;
+                }
+            }
+
+            div {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+
+                a{
+                    i {
+                        font-size: 1em;
+                    }
                 }
             }
         }

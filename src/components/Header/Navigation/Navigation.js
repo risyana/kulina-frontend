@@ -8,7 +8,7 @@ const Navigation = () => (
             <li>
                 <a href=''> About Us</a>
             </li>
-            <li>
+            <li> 
                 <a href='' className = 'active'> Career</a>
             </li>
             <li>

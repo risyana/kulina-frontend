@@ -5,7 +5,14 @@ const Footer = () => (
         <hr/>
         <div>
             <p>
-                Made with <i className= 'fa fa-heart'></i> from Indonesia. &copy; Kulina, 2018. All rigths reserved.
+                Made with
+                    &nbsp;
+                    <i className= 'fa fa-heart'></i> 
+                    &nbsp; 
+                from Indonesia. 
+                    <br />
+                    &nbsp; 
+                &copy; Kulina, 2018. All rigths reserved.
             </p>
             <div>
                 <span>Follow Kami</span> 
