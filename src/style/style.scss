@@ -103,6 +103,7 @@ body {
 
 .App-article {
     display : flex;
+    max-width: 1440px;
     padding : 50px 150px; 
     background-color: white;
 
@@ -168,7 +169,7 @@ body {
     padding : 50px 150px;
     background-color: white;
     display : flex;
-    flex-direction: column; 
+    flex-direction: column;    
     
     hr {
         width: 100%;

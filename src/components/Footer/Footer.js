@@ -14,7 +14,7 @@ const Footer = () => (
                     &nbsp; 
                 &copy; Kulina, 2018. All rigths reserved.
             </p>
-            <div>
+            <div> 
                 <span>Follow Kami</span> 
                 <a href=''><i className = 'fab fa-facebook-square'></i></a>
                 <a href=''><i className = 'fab fa-twitter-square'></i></a>

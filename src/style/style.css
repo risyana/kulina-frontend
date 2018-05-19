@@ -72,6 +72,7 @@ body {
 /*Article*/
 .App-article {
   display: flex;
+  max-width: 1440px;
   padding: 50px 150px;
   background-color: white; }
   .App-article div.title {
