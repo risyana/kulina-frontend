@@ -3,6 +3,7 @@ import './style/style.css'
 import Header from './components/Header/Header'
 import Article from './components/Article/Article'
 import Job from './components/Job/Job'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
 
@@ -75,9 +76,7 @@ class App extends Component {
           {jobs}
         </Article>
 
-        <footer>
-
-        </footer>
+        <Footer /> 
       
       </div>
     );

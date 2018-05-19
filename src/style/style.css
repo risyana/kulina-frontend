@@ -124,11 +124,21 @@ body {
     width: 100%;
     border: none;
     border-top: 1px solid #eee; }
+  .App-footer p i {
+    color: red; }
   .App-footer div {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .App-footer div div {
-      width: 22%;
+      width: 50%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: flex-end; }
+      .App-footer div div span {
+        padding: 5px; }
+      .App-footer div div a {
+        text-decoration: none;
+        color: inherit;
+        padding: 5px; }
+        .App-footer div div a i {
+          font-size: 2em; }
