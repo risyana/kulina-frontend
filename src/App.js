@@ -2,9 +2,57 @@ import React, { Component } from 'react'
 import './style/style.css'
 import Header from './components/Header/Header'
 import Article from './components/Article/Article'
+import Job from './components/Job/Job'
 
 class App extends Component {
+
+  state = {
+    jobs: [
+      {
+        "title": "Frontend Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Bandung"
+      },
+      {
+        "title": "Mobile Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Jakarta"
+      },
+      {
+        "title": "Mobile Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Jakarta"
+      },
+      {
+        "title": "Mobile Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Jakarta"
+      },
+      {
+        "title": "Mobile Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Jakarta"
+      },
+      {
+        "title": "Mobile Developer",
+        "type": "Engineer",
+        "status": "Fulltime",
+        "location": "Jakarta"
+      },
+    ]
+  }
+
   render() {
+
+    let jobs = this.state.jobs.map((job) => (
+      <Job job={job} />
+    ));
+
     return (
       <div className="App-container">
         <header className="App-header">
@@ -23,9 +71,9 @@ class App extends Component {
           </p>
         </Article>
       
-        <section>
-
-        </section>
+        <Article title="Explore Opportunities" bgcolor="#eee">
+          {jobs}
+        </Article>
 
         <footer>
 

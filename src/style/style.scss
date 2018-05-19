@@ -14,7 +14,7 @@ body {
 .App-container {
     left: 0;
     top : 0;
-    height: 100vh;  
+    height: 100vh;
 }
 
 /*Header*/
@@ -109,11 +109,52 @@ body {
         font-size: 1.4em;
         width : 35%;
         flex-shrink: 0;
+        box-sizing: border-box;
     }
     div.content {
         padding-top: 15px;
         color : gray;
         font-size: 1.05em;
         line-height: 1.6em;
+        width : 65%
     }
+}
+
+/*Job Card*/
+
+.Job {
+    background-color: white;
+    border : 1px solid #eee; 
+    width : 100%;
+    border-radius: 5px;
+    box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.1);
+    display : flex;
+    justify-content: space-between;
+    padding : 0 15px 15px 20px;
+    margin-bottom: 25px;
+    align-items: center;
+
+    div {
+
+        h3 { 
+            color : rgb(59, 59, 59);
+            margin-bottom: -18px;
+        }
+
+        p {
+            font-size: 0.95em;
+        }
+    }
+
+    button {
+        height: 40px;
+        width: 120px;
+        background-color: rgb(255, 134, 21);
+        border : none;
+        border-radius: 5px;
+        color:white;
+
+    }
+
+
 }
