@@ -1,0 +1,97 @@
+    
+/*General*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica;
+} 
+
+/*App Container*/
+.App-container {
+    left: 0;
+    top : 0;
+    height: 100vh;
+}
+
+/*Header*/
+.header-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    color : white;
+    position: relative;
+    width : 100%;
+    height : 500px;
+    background: url(https://source.unsplash.com/random) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    	
+    &:before {
+        content: '';
+        position: absolute;
+		top : 0;
+		left : 0;
+		bottom : 0;
+		right : 0;
+        background-image: linear-gradient(to right, rgb(228, 39, 6), rgb(255, 115, 0) );
+        opacity: 0.6;
+    }
+
+    nav {
+        z-index: 100; 
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            text-align: left;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+
+            li {
+                padding : 0 15px ;
+
+                a {
+                    color : lightgray;
+                    text-decoration : none;
+                }
+
+                a.active {
+                    color : white;
+                }
+            }
+        }
+    }
+
+    h1 {
+        z-index: 100; 
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    div {
+        z-index: 100;
+        margin: 0 auto;
+        text-align: center;
+
+        button {
+            font-size: 2em;
+            width : 50px;
+            height: 50px;
+            color : tomato;
+            border-radius: 50px;
+            border : 1px solid #eee;
+            background-color: white;
+        }
+    }
+}
