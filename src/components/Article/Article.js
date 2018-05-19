@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const Article = (props) => (
     <article className="App-article" style={{backgroundColor : props.bgcolor}} >

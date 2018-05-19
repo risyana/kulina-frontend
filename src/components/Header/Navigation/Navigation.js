@@ -14,8 +14,13 @@ const Navigation = () => (
             <li>
                 <a href=''> Internship</a>
             </li>
-            
         </ul>
+
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 )
 

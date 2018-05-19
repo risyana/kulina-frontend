@@ -50,6 +50,8 @@ body {
           text-decoration: none; }
         .header-container nav ul li a.active {
           color: white; }
+    .header-container nav div {
+      display: none; }
   .header-container h1 {
     z-index: 100;
     margin: 0 auto;
@@ -145,16 +147,37 @@ body {
         .App-footer div div a i {
           font-size: 2em; }
 
+/*Toggle Drawer*/
+.Toggle-drawer {
+  display: none; }
+
 /*---mobile---*/
 @media (max-width: 900px) {
   .header-container {
     padding: 10px; }
     .header-container:before {
       background-image: linear-gradient(to bottom, red, #ff7300); }
-    .header-container nav img {
-      width: 110px; }
-    .header-container nav ul {
-      display: none; }
+    .header-container nav {
+      align-items: center; }
+      .header-container nav img {
+        width: 110px; }
+      .header-container nav ul {
+        display: none; }
+      .header-container nav div {
+        margin-right: 0;
+        width: 35px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        box-sizing: border-box;
+        cursor: pointer; }
+        .header-container nav div span {
+          width: 90%;
+          height: 3px;
+          background-color: white; }
   .App-article {
     flex-direction: column;
     padding: 30px 15px; }

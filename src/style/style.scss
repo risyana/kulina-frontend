@@ -14,7 +14,7 @@ body {
 .App-container {
     left: 0;
     top : 0;
-    height: 100vh; 
+    height: 100vh;
 }
 
 /*Header*/
@@ -43,6 +43,7 @@ body {
     }
 
     nav {
+        
         z-index: 100; 
         display: flex;
         justify-content: space-between;
@@ -68,6 +69,10 @@ body {
                     color : white;
                 }
             }
+        }
+
+        div {
+            display: none;
         }
     }
 
@@ -208,6 +213,18 @@ body {
     }
 }
 
+/*Toggle Drawer*/
+
+.Toggle-drawer {
+    display: none;
+}
+
+
+
+
+
+
+
 /*---mobile---*/
 
 @media (max-width: 900px) {
@@ -219,12 +236,34 @@ body {
             background-image: linear-gradient(to bottom, red, rgb(255, 115, 0) );
         
         }
-        nav {
+        nav {  
+            align-items: center;          
+
             img {
                 width: 110px;
             }
+
             ul {
                 display: none;
+            }
+
+            div {
+                margin-right: 0 ;
+                width: 35px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                box-sizing: border-box;
+                cursor: pointer;
+
+                span {
+                    width: 90%;
+                    height: 3px;
+                    background-color: white;
+                }
             }
         }
     }
