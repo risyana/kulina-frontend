@@ -9,37 +9,42 @@ class App extends Component {
 
   state = {
     jobs: [
-      {
+      { "id" : 1,
         "title": "Frontend Developer",
         "type": "Engineer",
         "status": "Fulltime",
         "location": "Bandung"
       },
       {
+        "id": 2,
         "title": "Mobile Developer",
         "type": "Engineer",
         "status": "Fulltime",
         "location": "Jakarta"
       },
       {
+        "id": 3,
         "title": "Mobile Developer",
         "type": "Engineer",
         "status": "Fulltime",
         "location": "Jakarta"
       },
       {
+        "id": 4,
         "title": "Mobile Developer",
         "type": "Engineer",
         "status": "Fulltime",
         "location": "Jakarta"
       },
       {
+        "id": 5,
         "title": "Mobile Developer",
         "type": "Engineer",
         "status": "Fulltime",
         "location": "Jakarta"
       },
       {
+        "id": 6,
         "title": "Mobile Developer",
         "type": "Engineer",
         "status": "Fulltime",
@@ -51,7 +56,7 @@ class App extends Component {
   render() {
 
     let jobs = this.state.jobs.map((job) => (
-      <Job job={job} />
+      <Job key = {job.id} job={job} />
     ));
 
     return (
