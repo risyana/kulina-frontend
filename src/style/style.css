@@ -159,7 +159,7 @@ body {
   .header-container {
     padding: 10px; }
     .header-container:before {
-      background-image: linear-gradient(to bottom, red, #ff7300); }
+      background-image: linear-gradient(to bottom, red, red); }
     .header-container nav {
       align-items: center; }
       .header-container nav img {
