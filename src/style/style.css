@@ -69,6 +69,8 @@ body {
       border: 1px solid #eee;
       background-color: white;
       cursor: pointer; }
+      .header-container div button:hover {
+        opacity: 0.8; }
 
 /*Article*/
 .App-article {
@@ -116,6 +118,8 @@ body {
     border-radius: 5px;
     color: white;
     cursor: pointer; }
+    .Job button:hover {
+      opacity: 0.8; }
 
 /*Footer*/
 .App-footer {
@@ -159,7 +163,7 @@ body {
   .header-container {
     padding: 10px; }
     .header-container:before {
-      background-image: linear-gradient(to bottom, red, red); }
+      background-image: linear-gradient(to bottom, red, #ff7300); }
     .header-container nav {
       align-items: center; }
       .header-container nav img {
@@ -181,6 +185,7 @@ body {
           width: 90%;
           height: 3px;
           background-color: white; }
+
   .App-article {
     flex-direction: column;
     padding: 30px 15px; }
@@ -190,6 +195,7 @@ body {
     .App-article div.content {
       padding-top: 0;
       width: 100%; }
+
   .Job {
     flex-direction: column;
     justify-content: flex-start;
@@ -198,6 +204,7 @@ body {
     margin-bottom: 13px; }
     .Job button {
       height: 34px; }
+
   .App-footer {
     padding: 30px 15px;
     text-align: center; }
@@ -211,3 +218,5 @@ body {
         justify-content: center; }
         .App-footer div div a i {
           font-size: 1em; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -135,6 +135,9 @@ body {
             border : $borderButton1;
             background-color: $bgColorButton1;
             cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -199,6 +202,9 @@ body {
         border-radius: 5px;
         color:$fontColorButton2;
         cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
