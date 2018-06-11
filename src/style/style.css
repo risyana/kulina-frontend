@@ -1,4 +1,12 @@
-/*General*/
+/* General */
+/* Header */
+/* Button1 */
+/* Article */
+/* Job */
+/* Button2 */
+/* Footer */
+/* Heart */
+/* Burger icon */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   background-color: white;
@@ -6,13 +14,13 @@ body {
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif; }
 
-/*App Container*/
+/* App Container */
 .App-container {
   left: 0;
   top: 0;
   height: 100vh; }
 
-/*Header*/
+/* Header */
 .header-container {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .header-container:before {
+  .header-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -33,6 +41,21 @@ body {
     right: 0;
     background-image: linear-gradient(to right, red, #ff7300);
     opacity: 0.6; }
+  .header-container div {
+    z-index: 100;
+    margin: 0 auto;
+    text-align: center; }
+    .header-container div button {
+      font-size: 2em;
+      width: 50px;
+      height: 50px;
+      color: tomato;
+      border-radius: 50px;
+      border: 1px solid #eee;
+      background-color: white;
+      cursor: pointer; }
+      .header-container div button:hover {
+        opacity: 0.8; }
   .header-container nav {
     z-index: 100;
     display: flex;
@@ -56,23 +79,8 @@ body {
     z-index: 100;
     margin: 0 auto;
     text-align: center; }
-  .header-container div {
-    z-index: 100;
-    margin: 0 auto;
-    text-align: center; }
-    .header-container div button {
-      font-size: 2em;
-      width: 50px;
-      height: 50px;
-      color: tomato;
-      border-radius: 50px;
-      border: 1px solid #eee;
-      background-color: white;
-      cursor: pointer; }
-      .header-container div button:hover {
-        opacity: 0.8; }
 
-/*Article*/
+/* Article */
 .App-article {
   display: flex;
   max-width: 1440px;
@@ -92,7 +100,7 @@ body {
     line-height: 1.6em;
     width: 65%; }
 
-/*Job Card*/
+/* Job Card */
 .Job {
   background-color: white;
   border: 1px solid #eee;
@@ -121,48 +129,48 @@ body {
     .Job button:hover {
       opacity: 0.8; }
 
-/*Footer*/
-.App-footer {
+/* Footer */
+footer.App-footer {
   font-size: 0.9em;
   color: gray;
   padding: 50px 150px;
   background-color: white;
   display: flex;
   flex-direction: column; }
-  .App-footer hr {
+  footer.App-footer hr {
     width: 100%;
     border: none;
     border-top: 1px solid #eee; }
-  .App-footer p i {
+  footer.App-footer p i {
     color: red; }
-  .App-footer p br {
+  footer.App-footer p br {
     display: none; }
-  .App-footer div {
+  footer.App-footer div {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .App-footer div div {
+    footer.App-footer div div {
       width: 50%;
       display: flex;
       justify-content: flex-end; }
-      .App-footer div div span {
+      footer.App-footer div div span {
         padding: 5px; }
-      .App-footer div div a {
+      footer.App-footer div div a {
         text-decoration: none;
         color: inherit;
         padding: 5px; }
-        .App-footer div div a i {
+        footer.App-footer div div a i {
           font-size: 2em; }
 
-/*Toggle Drawer*/
+/* Toggle Drawer */
 .Toggle-drawer {
   display: none; }
 
-/*---mobile---*/
+/* ---mobile--- */
 @media (max-width: 900px) {
   .header-container {
     padding: 10px; }
-    .header-container:before {
+    .header-container::before {
       background-image: linear-gradient(to bottom, red, #ff7300); }
     .header-container nav {
       align-items: center; }
@@ -205,18 +213,18 @@ body {
     .Job button {
       height: 34px; }
 
-  .App-footer {
+  footer.App-footer {
     padding: 30px 15px;
     text-align: center; }
-    .App-footer div {
+    footer.App-footer div {
       flex-direction: column; }
-      .App-footer div p br {
+      footer.App-footer div p br {
         display: inline-block; }
-      .App-footer div div {
+      footer.App-footer div div {
         width: 100%;
         flex-direction: row;
         justify-content: center; }
-        .App-footer div div a i {
+        footer.App-footer div div a i {
           font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

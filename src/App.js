@@ -82,10 +82,10 @@ class App extends Component {
           <p>
             {
               `
-              We tooke pride in being the first food tech startup to join 
+              We tooke pride in being the first food tech startup to join
               'Google Launchpad Accelearator'  in San Francisco,
               and the only one from Indonesia in winter 2018.
-              Our startup is backed by the same investor who invested 
+              Our startup is backed by the same investor who invested
               in Ele.me (China's unicorn food delivery startup)
               `
             }

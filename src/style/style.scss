@@ -1,372 +1,373 @@
-    
-/*General*/
-$bgColorBody : white;
+/* General */
 
-//header
-$fontColorHeader : white;
-$fontColorNavActive : white;
-$fontColorNavOther : lightgray;
-$gradient2 : rgb(255, 115, 0);
-$gradient1 : red;
+$bgColorBody: white;
 
-// button1
-$bgColorButton1 : white;
-$fontColorButton1 : tomato;
-$borderButton1 : 1px solid #eee;
+/* Header */
 
-// article
-$bgColorArticle : white;
-$fontColorArticle_title : rgb(59, 59, 59);
-$fontColorArticle_content : gray;
+$fontColorHeader: white;
+$fontColorNavActive: white;
+$fontColorNavOther: lightgray;
+$gradient2: rgb(255, 115, 0);
 
-// job
-$bgColorJob : white;
-$borderJob : 1px solid #eee; 
-$shadowJob : 1px 3px 15px 5px rgba(0,0,0,0.1);
-$fontColorJob_title : rgb(59, 59, 59);
+/* Button1 */
 
-// button2 
-$bgColorButton2 : rgb(255, 134, 21);
-$fontColorButton2 : white;
+$gradient1: red;
+$bgColorButton1: white;
+$fontColorButton1: tomato;
 
-// footer 
-$fontColorFooter : gray;
-$bgColorFooter : white;
+/* Article */
 
-//heart
-$fontColorHeart : red;
+$borderButton1: 1px solid #eee;
+$bgColorArticle: white;
+$fontColorArticle_title: rgb(59, 59, 59);
 
-// burger icon :
-$bgColorBurger : white;
+/* Job */
 
+$fontColorArticle_content: gray;
+$bgColorJob: white;
+$borderJob: 1px solid #eee;
+$shadowJob: 1px 3px 15px 5px rgba(0, 0, 0, 0.1);
 
+/* Button2 */
+
+$fontColorJob_title: rgb(59, 59, 59);
+$bgColorButton2: rgb(255, 134, 21);
+
+/* Footer */
+
+$fontColorButton2: white;
+$fontColorFooter: gray;
+
+/* Heart */
+
+$bgColorFooter: white;
+$fontColorHeart: red;
+
+/* Burger icon */
+
+$bgColorBurger: white;
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    background-color: $bgColorBody;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-} 
+  background-color: $bgColorBody;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 
-/*App Container*/
+/* App Container */
+
 .App-container {
-    left: 0;
-    top : 0;
-    height: 100vh;
+  left: 0;
+  top: 0;
+  height: 100vh;
 }
 
-/*Header*/
+/* Header */
+
 .header-container {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 30px;
-    color : $fontColorHeader;
-    position: relative;
-    width : 100%;
-    height : 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px;
+  color: $fontColorHeader;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    	
-    &:before {
-        content: '';
-        position: absolute;
-		top : 0;
-		left : 0;
-		bottom : 0;
-		right : 0;
-        background-image: linear-gradient(to right, $gradient1, $gradient2 );
-        opacity: 0.6;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to right, $gradient1, $gradient2);
+    opacity: 0.6;
+  }
 
-    nav {
-        
-        z-index: 100; 
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            text-align: left;
-        }
-
-        ul{
-            display: flex;
-            list-style-type: none;
-            justify-content: space-around;
-
-            li {
-                padding : 0 15px ;
-
-                a {
-                    color : $fontColorNavOther;
-                    text-decoration : none;
-                }
-
-                a.active {
-                    color : $fontColorNavActive;
-                }
-            }
-        }
-
-        div {
-            display: none;
-        }
-    }
-
-    h1 {
-        z-index: 100; 
-        margin: 0 auto; 
-        text-align: center;
-    }
-
-    div {
-        z-index: 100;
-        margin: 0 auto;
-        text-align: center;
-
-        button {
-            font-size: 2em;
-            width : 50px;
-            height: 50px;
-            color : $fontColorButton1;
-            border-radius: 50px;
-            border : $borderButton1;
-            background-color: $bgColorButton1;
-            cursor: pointer;
-            &:hover {
-                opacity: 0.8;
-            }
-        }
-    }
-}
-
-/*Article*/
-
-.App-article {
-    display : flex;
-    max-width: 1440px;
-    padding : 50px 150px; 
-    background-color: $bgColorArticle;
-
-    div.title {
-        font-weight: bold;
-        color : $fontColorArticle_title;
-        font-size: 1.4em;
-        width : 35%;
-        flex-shrink: 0;
-        box-sizing: border-box;
-    }
-    div.content {
-        padding-top: 15px;
-        color : $fontColorArticle_content;
-        font-size: 1.05em;
-        line-height: 1.6em;
-        width : 65%
-    }
-}
-
-/*Job Card*/
-
-.Job {
-    background-color: $bgColorJob;
-    border : $borderJob;
-    width : 100%;
-    border-radius: 5px;
-    box-shadow: $shadowJob;
-    display : flex;
-    justify-content: space-between;
-    padding : 0 15px 15px 20px;
-    margin-bottom: 25px;
-    align-items: center;
-    box-sizing: border-box; 
-
-    div {
-
-        h3 { 
-            color : $fontColorJob_title;
-            margin-bottom: -18px;
-        }
-
-        p {
-            font-size: 0.95em;
-        }
-    }
+  div {
+    z-index: 100;
+    margin: 0 auto;
+    text-align: center;
 
     button {
-        height: 40px;
-        width: 120px;
-        background-color: $bgColorButton2;
-        border : none;
-        border-radius: 5px;
-        color:$fontColorButton2;
-        cursor: pointer;
-        &:hover {
-            opacity: 0.8;
-        }
+      font-size: 2em;
+      width: 50px;
+      height: 50px;
+      color: $fontColorButton1;
+      border-radius: 50px;
+      border: $borderButton1;
+      background-color: $bgColorButton1;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
+  }
+
+  nav {
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      text-align: left;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+
+      li {
+        padding: 0 15px;
+
+        a {
+          color: $fontColorNavOther;
+          text-decoration: none;
+        }
+
+        a.active {
+          color: $fontColorNavActive;
+        }
+      }
+    }
+
+    div {
+      display: none;
+    }
+  }
+
+  h1 {
+    z-index: 100;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
-/*Footer*/
+/* Article */
 
-.App-footer {
-    font-size: 0.9em;
-    color : $fontColorFooter;
-    padding : 50px 150px;
-    background-color: $bgColorFooter;
-    display : flex;
-    flex-direction: column;    
-    
-    hr {
-        width: 100%;
-        border : none;
-        border-top : 1px solid #eee;
+.App-article {
+  display: flex;
+  max-width: 1440px;
+  padding: 50px 150px;
+  background-color: $bgColorArticle;
+
+  div.title {
+    font-weight: bold;
+    color: $fontColorArticle_title;
+    font-size: 1.4em;
+    width: 35%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  div.content {
+    padding-top: 15px;
+    color: $fontColorArticle_content;
+    font-size: 1.05em;
+    line-height: 1.6em;
+    width: 65%;
+  }
+}
+
+/* Job Card */
+
+.Job {
+  background-color: $bgColorJob;
+  border: $borderJob;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: $shadowJob;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 15px 20px;
+  margin-bottom: 25px;
+  align-items: center;
+  box-sizing: border-box;
+
+  div {
+    h3 {
+      color: $fontColorJob_title;
+      margin-bottom: -18px;
     }
 
     p {
-        i {
-            color : $fontColorHeart; 
-        }
-
-        br {
-            display: none;
-        }
+      font-size: 0.95em;
     }
+  }
+
+  button {
+    height: 40px;
+    width: 120px;
+    background-color: $bgColorButton2;
+    border: none;
+    border-radius: 5px;
+    color: $fontColorButton2;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Footer */
+
+footer.App-footer {
+  font-size: 0.9em;
+  color: $fontColorFooter;
+  padding: 50px 150px;
+  background-color: $bgColorFooter;
+  display: flex;
+  flex-direction: column;
+
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+
+  p {
+    i {
+      color: $fontColorHeart;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     div {
-        display:flex;
-        justify-content: space-between;
-        align-items: center; 
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
 
-        div {
-            width : 50%;
-            display: flex;
-            justify-content: flex-end;
+      span {
+        padding: 5px;
+      }
 
-            span {
-                padding : 5px;
-            }
+      a {
+        text-decoration: none;
+        color: inherit;
+        padding: 5px;
 
-            a {
-                text-decoration: none;
-                color: inherit;
-                padding : 5px;
-
-                i {
-                    font-size: 2em;
-                }
-            }
+        i {
+          font-size: 2em;
         }
+      }
     }
+  }
 }
 
-/*Toggle Drawer*/
+/* Toggle Drawer */
 
 .Toggle-drawer {
-    display: none;
+  display: none;
 }
 
-
-
-
-
-
-
-/*---mobile---*/
+/* ---mobile--- */
 
 @media (max-width: 900px) {
+  .header-container {
+    padding: 10px;
 
-    .header-container {
-        padding : 10px;
-
-        &:before {
-            background-image: linear-gradient(to bottom, $gradient1, $gradient2);
-        
-        }
-        nav {  
-            align-items: center;          
-
-            img {
-                width: 110px;
-            }
-
-            ul {
-                display: none;
-            }
-
-            div {
-                margin-right: 0 ;
-                width: 35px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                padding: 5px;
-                box-sizing: border-box;
-                cursor: pointer;
-
-                span {
-                    width: 90%;
-                    height: 3px;
-                    background-color: $bgColorBurger;
-                }
-            }
-        }
+    &::before {
+      background-image: linear-gradient(to bottom, $gradient1, $gradient2);
     }
 
-    .App-article {
-        flex-direction: column;
-        padding : 30px 15px;
+    nav {
+      align-items: center;
 
-        div.title {
+      img {
+        width: 110px;
+      }
+
+      ul {
+        display: none;
+      }
+
+      div {
+        margin-right: 0;
+        width: 35px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        span {
+          width: 90%;
+          height: 3px;
+          background-color: $bgColorBurger;
+        }
+      }
+    }
+  }
+
+  .App-article {
+    flex-direction: column;
+    padding: 30px 15px;
+
+    div.title {
+      font-size: 1em;
+      width: 100%;
+    }
+
+    div.content {
+      padding-top: 0;
+      width: 100%;
+    }
+  }
+
+  .Job {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 10px 15px 15px;
+    margin-bottom: 13px;
+
+    button {
+      height: 34px;
+    }
+  }
+
+  footer.App-footer {
+    padding: 30px 15px;
+    text-align: center;
+
+    div {
+      flex-direction: column;
+
+      p {
+        br {
+          display: inline-block;
+        }
+      }
+
+      div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          i {
             font-size: 1em;
-            width : 100%
+          }
         }
-        div.content {
-            padding-top: 0;
-            width : 100%
-
-        }
+      }
     }
-
-    .Job {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding : 0 10px 15px 15px;
-        margin-bottom: 13px;
-        
-        button {
-            height: 34px;
-        }
-    }
-
-    .App-footer {
-        padding : 30px 15px;
-        text-align: center;
-
-        div {
-            flex-direction: column;
-
-            p {
-                br {
-                    display: inline-block;
-                }
-            }
-
-            div {
-                width: 100%;
-                flex-direction: row;
-                justify-content: center;
-
-                a{
-                    i {
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
