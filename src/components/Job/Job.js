@@ -3,15 +3,19 @@ import React from 'react';
 const Job = props => (
   <div className="Job">
     <div>
-      <h3>
+      <p className="title">
         {props.job.title}
-      </h3>
+      </p>
       <p>
-        {`${props.job.type}  .  ${props.job.status}  .  ${props.job.location}`}
+        {` ${props.job.type} `}
+        &bull;
+        {` ${props.job.status} `}
+        &bull;
+        {` ${props.job.location} `}
       </p>
     </div>
     <button>
-        Apply
+      Apply
     </button>
 
   </div>

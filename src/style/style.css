@@ -106,18 +106,24 @@ body {
   border: 1px solid #eee;
   width: 100%;
   border-radius: 5px;
-  box-shadow: 1px 3px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 20px 7px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  padding: 0 15px 15px 20px;
+  padding: 15px 25px 15px 20px;
   margin-bottom: 25px;
   align-items: center;
   box-sizing: border-box; }
-  .Job div h3 {
-    color: #3b3b3b;
-    margin-bottom: -18px; }
-  .Job div p {
-    font-size: 0.95em; }
+  .Job div {
+    display: flex;
+    flex-direction: column; }
+    .Job div p.title {
+      margin: 0;
+      color: #3b3b3b;
+      font-size: 1.2em;
+      font-weight: bold; }
+    .Job div p {
+      margin: 0;
+      font-size: 0.95em; }
   .Job button {
     height: 40px;
     width: 120px;
