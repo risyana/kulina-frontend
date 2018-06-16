@@ -67,7 +67,7 @@ class App extends Component {
           <Header />
         </header>
 
-        <Article title="What We Do" bgcolor="white">
+        <Article title="What We Do">
           <p>
             {
               `
@@ -100,7 +100,7 @@ class App extends Component {
           </p>
         </Article>
 
-        <Article title="Explore Opportunities" bgcolor="#eee">
+        <Article title="Explore Opportunities" background="linear-gradient(#f9f9f9, white)">
           {jobs}
         </Article>
 
