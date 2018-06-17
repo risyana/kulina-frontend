@@ -81,7 +81,7 @@ nav.NavDesktop {
     background-image: linear-gradient(to right, red, #ff7300);
     opacity: 0.6; }
   .header-container div {
-    z-index: 100;
+    z-index: 99;
     margin: 0 auto;
     text-align: center; }
     .header-container div button {
