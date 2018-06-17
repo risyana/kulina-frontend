@@ -5,6 +5,7 @@ import Article from './components/Article/Article';
 import Job from './components/Job/Job';
 import Footer from './components/Footer/Footer';
 import Backdrop from './components/UI/Backdrop/Backdrop';
+import SideDrawer from './components/UI/SideDrawer/SideDrawer';
 
 class App extends Component {
   constructor() {
@@ -75,9 +76,12 @@ class App extends Component {
       />)
       : null;
 
+    const sideDrawer = <SideDrawer isBackdropOpen={this.state.isBackdropOpen} />;
+
     return (
       <div className="App-container">
         {backdrop}
+        {sideDrawer}
         <header className="App-header">
           <Header onClickBackdrop={this.onClickBackdrop} />
         </header>

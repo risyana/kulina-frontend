@@ -16,7 +16,10 @@ const Navigation = props => (
       </li>
     </ul>
 
-    <div onClick={props.onClickBackdrop} >
+    <div
+      onClick={props.onClickBackdrop}
+      role="presentation"
+    >
       <span />
       <span />
       <span />

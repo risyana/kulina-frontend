@@ -77,6 +77,22 @@ div.Backdrop {
   height: 100vh;
 }
 
+/* Side Drawer */
+
+.SideDrawer {
+  display: block;
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 110;
+  background-color: white;
+  height: 100vh;
+  transition: transform 0.3s ease-out;
+}
+
 /* Header */
 
 .header-container {
