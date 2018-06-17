@@ -5,7 +5,7 @@ import Article from './components/Article/Article';
 import Job from './components/Job/Job';
 import Footer from './components/Footer/Footer';
 import Backdrop from './components/UI/Backdrop/Backdrop';
-import SideDrawer from './components/UI/SideDrawer/SideDrawer';
+import SideDrawer from './components/Header/Navigation/SideDrawer/SideDrawer';
 
 class App extends Component {
   constructor() {
