@@ -14,7 +14,7 @@ const Header = props => (
       Join Impactfull Company
     </h1>
     <div>
-      <button>
+      <button onClick={() => window.scroll({ top: 500, behavior: 'smooth' })}>
         <i className="fa fa-angle-down" />
       </button>
     </div>
