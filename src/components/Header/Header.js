@@ -5,9 +5,9 @@ import bg from '../../images/alvaro-reyes-500044-unsplash.png';
 
 const backgroundStyle = { background: `url(${bg}) center center no-repeat`, backgroundSize: 'cover' };
 
-const Header = () => (
+const Header = props => (
   <div className="header-container" style={backgroundStyle}>
-    <Navigation />
+    <Navigation onClickBackdrop={props.onClickBackdrop} />
     <h1>
       Join Impactfull Company
     </h1>

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../../images/kulina-logo-white.svg';
 
-const Navigation = () => (
+const Navigation = props => (
   <nav>
     <img alt="logo" src={logo} />
     <ul>
@@ -16,7 +16,7 @@ const Navigation = () => (
       </li>
     </ul>
 
-    <div>
+    <div onClick={props.onClickBackdrop} >
       <span />
       <span />
       <span />

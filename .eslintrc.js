@@ -8,6 +8,7 @@ module.exports = {
     },
     "rules": {
         "linebreak-style": ["error", "windows"],
-        "react/jsx-filename-extension": false
+        "react/jsx-filename-extension": false,
+        "jsx-a11y/click-events-have-key-events": 1,
     }
 };

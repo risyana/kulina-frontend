@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Article from './components/Article/Article';
 import Job from './components/Job/Job';
 import Footer from './components/Footer/Footer';
+import Backdrop from './components/UI/Backdrop/Backdrop';
 
 class App extends Component {
   constructor() {
@@ -53,7 +54,14 @@ class App extends Component {
           location: 'Jakarta',
         },
       ],
+      isBackdropOpen: false,
     };
+
+    this.onClickBackdrop = this.onClickBackdrop.bind(this);
+  }
+
+  onClickBackdrop() {
+    this.setState({ isBackdropOpen: !this.state.isBackdropOpen });
   }
 
   render() {
@@ -61,10 +69,17 @@ class App extends Component {
       <Job key={job.id} job={job} />
     ));
 
+    const backdrop = this.state.isBackdropOpen
+      ? (<Backdrop
+        onClickBackdrop={this.onClickBackdrop}
+      />)
+      : null;
+
     return (
       <div className="App-container">
+        {backdrop}
         <header className="App-header">
-          <Header />
+          <Header onClickBackdrop={this.onClickBackdrop} />
         </header>
 
         <Article title="What We Do">
