@@ -43,8 +43,11 @@ div.Backdrop {
   top: 0;
   z-index: 110;
   background-color: white;
-  height: 100vh;
   transition: transform 0.3s ease-out; }
+
+/* Burger Icon */
+div.BurgerIcon {
+  display: none; }
 
 /* Header */
 .header-container {
@@ -99,8 +102,6 @@ div.Backdrop {
           text-decoration: none; }
         .header-container nav ul li a.active {
           color: white; }
-    .header-container nav div {
-      display: none; }
   .header-container h1 {
     z-index: 100;
     margin: 0 auto;
@@ -200,6 +201,24 @@ footer.App-footer {
 
 /* ---mobile--- */
 @media (max-width: 900px) {
+  div.BurgerIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer; }
+    div.BurgerIcon span {
+      width: 90%;
+      height: 3px;
+      background-color: white; }
+
   .header-container {
     padding: 10px; }
     .header-container::before {
@@ -210,21 +229,6 @@ footer.App-footer {
         width: 110px; }
       .header-container nav ul {
         display: none; }
-      .header-container nav div {
-        margin-right: 0;
-        width: 35px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        box-sizing: border-box;
-        cursor: pointer; }
-        .header-container nav div span {
-          width: 90%;
-          height: 3px;
-          background-color: white; }
 
   .App-article {
     flex-direction: column;

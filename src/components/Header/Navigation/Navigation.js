@@ -15,15 +15,6 @@ const Navigation = props => (
         <a href="null"> Internship</a>
       </li>
     </ul>
-
-    <div
-      onClick={props.onClickBackdrop}
-      role="presentation"
-    >
-      <span />
-      <span />
-      <span />
-    </div>
   </nav>
 );
 
