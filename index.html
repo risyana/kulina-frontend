@@ -1,1 +1,17 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/kulina-frontend/manifest.json"><link rel="shortcut icon" href="/kulina-frontend/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"><title>React App</title><link href="/kulina-frontend/static/css/main.a8e05a68.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/kulina-frontend/static/js/main.126ad4d9.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/kulina-frontend/manifest.json"><link rel="shortcut icon" href="/kulina-frontend/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"><title>React App</title><link href="/kulina-frontend/static/css/main.766ce959.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/kulina-frontend/static/js/main.ced585e6.js"></script></body><script>document.body.onscroll = () => {
+    let scrollTop = window.pageYOffset;
+    let navDesktop = document.querySelector(".NavDesktop");
+    console.log(scrollTop);
+    if (scrollTop >= 100) {
+      navDesktop.style.position = 'fixed';
+      navDesktop.style.backgroundColor = 'tomato';
+      navDesktop.style.top = 0;
+      navDesktop.style.left = 0;
+      navDesktop.style.width = "100%";
+      navDesktop.style.padding = "5px 15px";
+      navDesktop.style.boxSizing = "border-box";
+      navDesktop.style.opacity = "0.97";
+    } else {
+      navDesktop.removeAttribute('style');
+    }
+  }</script></html>
